@@ -1,1 +1,36 @@
-
+body {
+	background-image: url("images/Backgrounddither.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	font-family:"Times New Roman", Times, serif;
+}
+div.container {
+	text-align: center;
+}
+div#midbox {
+	display: inline-block;
+	position: relative;
+	background-color: grey;
+	width: 512px;
+	height: 700px;
+}
+div#logo {
+	display: block;
+	height: 256px;
+	width: 512px;
+}
+div#text {
+	display: block;
+	height: 410px;
+	text-align: left;
+    padding: 5px 10px 20px;
+	border-top: 2px ridge black;
+	overflow: auto;
+}
+div#footer {
+	display: block;
+	background-color: darkgrey;
+	border-top: 2px groove black;
+	height: 20px;
+}
