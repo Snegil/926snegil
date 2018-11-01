@@ -5,29 +5,49 @@ body {
 	background-size: cover;
 	font-family:"Times New Roman", Times, serif;
 }
+
 div.container {
 	text-align: center;
 }
+
 div#midbox {
 	display: inline-block;
 	position: relative;
 	background-color: grey;
-	width: 512px;
+	width: 50%;
 	height: 700px;
 }
+div#imgc {
+	
+}
+
 div#logo {
 	display: block;
 	height: 256px;
-	width: 512px;
+	width: 100%;
 }
+
+@media only screen and (max-width: 1000px) {
+
+	div#imgc {
+		display: none;
+	}
+	div#text {
+		height: 650px;
+		overflow: none;
+	}
+	
+}
+
 div#text {
 	display: block;
 	height: 410px;
 	text-align: left;
     padding: 5px 10px 20px;
-	border-top: 2px ridge black;
+	/*border-top: 2px ridge black;*/
 	overflow: auto;
 }
+
 div#footer {
 	display: block;
 	background-color: darkgrey;
