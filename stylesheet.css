@@ -1,16 +1,19 @@
+/*Main body of webpage*/
 body {
 	background-color: #000000;
 	background-image: url("images/Back-dit-rez.png");
-	background-repeat: repeat-x;
+	background-repeat: repeat-y, repeat-x;
 	background-attachment: fixed;
 	background-size: contain;
 	font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
+/*To move middlebox to center*/
 div.container {
 	text-align: center;
 }
 
+/*Large middlebox*/
 div#midbox {
 	display: inline-block;
 	position: relative;
@@ -19,21 +22,35 @@ div#midbox {
 	height: 50%;
 	max-height: 70%;
 }
+
+/*Used to display:none the logo*/
 div#imgc {
 	
 }
 
+/*The logo*/
 div#logo {
 	display: block;
 	height: 256px;
 	width: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
+/*Showcase the name of the webpage while width is below 1066px*/
+div#webname {
+	display: none;
+}
+
+/*For mobile devices*/
+@media only screen and (max-width: 1066px) {
 
 	body {
 		background-image: url(images/smallbackground.png);
 		background-size: cover;
+	}
+
+	div#webname {
+		display: block;
+		font-size: 20px;
 	}
 
 	div#midbox {
@@ -50,6 +67,7 @@ div#logo {
 	
 }
 
+/*Main body of text*/
 div#text {
 	display: block;
 	height: 59%;
@@ -60,12 +78,39 @@ div#text {
 	overflow: auto;
 }
 
+/*For the footer*/
 div#footer {
 	display: block;
 	background-color: darkgrey;
 	border-top: 2px groove black;
 	height: 20px;
 }
+
+/*To contain buttons to footer*/
+div#buttonrow {
+	text-align: left;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*Buttons inside .buttonrow*/
+.button {
+	height: 80%;
+	border: 0px;
+	background-color: rgb(247, 247, 247);
+	transition-duration: 0.8s;
+	-webkit-transition-duration: 0.3s; /* Safari */
+}
+
+/*Hovering above .button*/
+.button:hover {
+	pointer: pointer;
+	transform: translatey(-2px);
+	border: 0px solid black;
+}
+
+
+
 
 
 
